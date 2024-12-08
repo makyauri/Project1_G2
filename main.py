@@ -113,7 +113,7 @@ def displayqueue(q:Queue):
         elif choice == '5':
             q.previous()
         
-        elif choice == '7':
+        elif choice == '6':
             break 
 
 def createTrack():
@@ -153,11 +153,6 @@ def displayMusicLibrary(m:MusicLibrary, pll:None, al:ArrayList):
         elif choice == '3':
             t=createTrack()
             m.insert(t)
-            # i = al.search(t.getAlbum())
-            # if i is not None:
-            #     al.getitem(i).insert(t)
-            #  else:
-            #     al.insert(Playlist(t.getAlbum()))
         elif choice == '4':
             print("Next page of music library...")
             m.page.nextpage()
